@@ -1,0 +1,26 @@
+{
+  "name": "obj ext",
+  "description": "my ext",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+  },
+  "background": {
+    "scripts": [
+      "./storage.js",
+      "./background.js"
+    ]
+  },
+  "options_page": "./options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "https://www.google.co.uk/*",
+    "https://www.google.com/*",
+    "*://www.linkedin.com/*"
+  ]
+}
